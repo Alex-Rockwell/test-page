@@ -1,0 +1,149 @@
+.prices__tarifs-table {
+    width: 100%;
+    margin-bottom: 75px;
+
+    @media screen and (max-width: 960px) {
+        margin-bottom: 30px;
+    }
+    
+    &--desktop {
+        @media screen and (max-width: 960px) {
+            display: none;
+        }
+    }
+    &--mobile {
+        display: none;
+
+        @media screen and (max-width: 960px) {
+            display: block;
+        }
+    }
+
+    th {
+        height: 50px;
+    }
+
+    td {
+        height: 105px;
+    }
+
+    .th-1 {
+        width: 100px;
+        background: #E5E5E5;
+        font-size: 18px;
+        font-weight: 700;
+        color: #31283c;
+    }
+    .th-2, .th-3, .th-4 {
+        max-width: 350px;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 30px;
+        color: #FFFFFF;
+    }
+
+    .th-2, .th-3 {
+        border-right: 10px solid #fff;
+    }
+
+    thead tr *:nth-child(2),
+    thead tr *:nth-child(3) {
+        margin-top: 10px;
+    }
+
+    .th-2 {
+        background: linear-gradient(90deg, #6A11CB 0%, #2575FC 100%);
+    }
+    .th-3 {
+        background: linear-gradient(90deg, #F9D423 0%, #FF4E50 100%);
+    }
+    .th-4 {
+        background: linear-gradient(90deg, #A445B2 0%, #D41872 52%, #FF0066 100%);
+    }
+
+    .td-1 {
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 14px;
+        color: #828282;
+    }
+    .td-2 {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 20px;
+        color: #2E2E2E;
+    }
+
+}
+.tarif-price {
+    margin-bottom: 30px;
+}
+.tarif-price-heading {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 28px;
+    color: #104F95;
+    display: inline-block;
+    margin-right: 4px;
+}
+.tarif-price-info {
+    display: flex;
+    flex-direction: column;
+    display: inline-block;
+}
+
+.tarif-price-info > * {
+    display: block;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    color: #104F95;
+}
+
+.tarif-btn {
+    padding: 0 60px;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 48px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #FFFFFF;
+    background-color: #36238d;
+    border-radius: 10px;
+    position: relative;
+    border: none;
+    outline: none;
+}
+.tarif-btn:hover {
+    cursor: pointer;
+}
+.tarif-btn::before {
+    content: 'Выбрать';
+    padding: 0 60px;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 48px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    z-index: -2;
+    background-color: #E61974;
+    border-radius: 10px;
+    position: absolute;
+    top: 3px;
+    left: 3px;
+}
+.tarif-btn::after {
+    content: 'Выбрать';
+    padding: 0 60px;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 48px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    z-index: -3;
+    background-color: #5ec3ef;
+    border-radius: 10px;
+    position: absolute;
+    top: 6px;
+    left: 6px;
+}

@@ -1,0 +1,129 @@
+/////////////////////////////// Modal windows ///////////////////////////////
+
+.modal {
+  max-height: 100vh;
+  overflow-y: auto;
+  width: 67vw;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 2px 4px 10px 0px rgba(0, 0, 0, 0.25);
+  z-index: 10;
+  transform: translate(-50%, -50%) scale(0);
+  transition: all .3s ease-in-out;
+  padding: 110px 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  @media screen and (max-width: 960px) {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    transform: translate(0, 0) scale(0);
+    overflow-x: hidden;
+  }
+}
+
+.modal.active {
+  transform: translate(-50%, -50%) scale(1);
+
+  @media screen and (max-width: 960px) {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    transform: translate(0, 0) scale(1);
+  }
+}
+  
+.close-button {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  background-color: #fff;
+  border: none;
+  outline: none;
+  font-size: 4rem;
+  cursor: pointer;
+}
+  
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(0, 0, 0, 0.3);
+  pointer-events: none;
+  transition: all .2s ease-in-out;
+  opacity: 0;
+}
+  
+.overlay.active {
+  pointer-events: all;
+  opacity: 11;
+}
+  
+.modal__text {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 20px;
+  text-align: center;
+  color: #2E2E2E;
+}
+  
+.modal__input {
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid #9F9F9F;
+  margin-bottom: 40px;
+}
+
+.modal__input:focus {
+  border: none;
+  outline: none;
+  border-bottom: 1px solid #000;
+}
+
+.modal__input::placeholder {
+  font-family: 'Roboto', sans-serif;
+  font-style: italic;
+  font-size: 14px;
+  line-height: 20px;
+  color: #2E2E2E;
+}
+
+.modal__input:focus::placeholder {
+  font-family: 'Roboto', sans-serif;
+  font-style: italic;
+  font-size: 14px;
+  line-height: 20px;
+  color: #2E2E2E;
+}
+
+.modal__submit {
+  display: block;
+  margin: auto;
+  background: #72B5FF;
+  border: 2px solid #31283C;
+  border-radius: 40px;
+  padding: 10px 85px;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+  color: #FFFFFF;
+  position: relative;
+  box-shadow: -3px 8px 0px 1px rgba(0, 0, 0, 0.89);
+}
+
+.modal__submit:hover {
+  cursor: pointer;
+}

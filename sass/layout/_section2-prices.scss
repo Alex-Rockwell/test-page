@@ -1,0 +1,68 @@
+.prices__tab {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;  
+}
+
+.prices__tablinks {
+    border: none;
+    cursor: pointer;
+    padding: 10px 40px;
+    transition: 0.3s;
+    box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.25);
+    background-color: #fdfdfd;
+    border-radius: 10px 10px 0 0;
+    margin-right: 5px;
+    font-size: 18px;
+    z-index: 0;
+    
+    @media screen and (max-width: 590px) {
+        padding: 10px 15px;
+        font-size: 14px;
+    }
+}
+
+.prices__tablinks:hover {
+    background-color: #ddd;
+}
+
+.prices__tablinks.active {
+    background-color: #fff;
+    color: #104f95;
+    z-index: -10;
+    position: relative;
+}
+
+.prices__tablinks.active .box {
+    width: 100%;
+    height: 10px;
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    top: 33px;
+    left: 0;
+    z-index: 200 !important;
+    box-shadow: 0;
+}
+
+.tabcontent {
+    display: none;
+    padding: 6px 55px;
+    border: 1px solid #ccc;
+    border-top: none;
+    box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.25);
+    background-color: #fff;
+    position: relative;
+    top: -2px;
+    min-height: 650px;  
+    overflow-x: auto;
+    max-width: 1300px;
+    margin: auto;
+
+    @media screen and (max-width: 960px) {
+        padding: 0px 10px;
+    }
+}
+
+.tabcontent.active {
+    display: block;
+}

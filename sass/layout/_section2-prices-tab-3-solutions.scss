@@ -1,0 +1,91 @@
+.solutions-tab {
+    padding: 130px 160px 70px;
+
+    @media screen and (max-width: 960px) {
+        padding: 60px 20px;
+    }
+}
+
+.solutions {
+    display: flex;
+}
+
+.solutions__img {
+    flex-basis: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    @media screen and (max-width: 960px) {
+        display: none;
+    }
+}
+.solutions__text-cont {
+    flex-basis: 50%;
+    
+    @media screen and (max-width: 960px) {
+        flex-basis: 100%;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+.solutions__text { 
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 36px;
+    color: #000000;
+    margin: 20px 0;
+
+    @media screen and (max-width: 960px) {
+        font-size: 18px;
+        line-height: 30px;
+        text-align: center;
+    }
+}
+
+.solutions__text { 
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 36px;
+    color: #000000;
+    margin: 20px 0;
+    padding-bottom: 20px;
+}
+
+.solutions__btn {
+    padding: 15px 90px;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 48px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #FFFFFF;
+    background-color: #72B5FF;
+    border-radius: 40px;
+    border: 2px solid #31283C;
+    position: relative;
+    outline: none;
+}
+.solutions__btn:hover {
+    cursor: pointer;
+}
+.solutions__btn::before {
+    content: 'Выбрать';
+    width: 100%;
+    padding: 5px 90px;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 48px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    z-index: -2;
+    background-color: #000;
+    border-radius: 40px;
+    position: absolute;
+    top: 10px;
+    left: -3px;
+}

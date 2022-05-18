@@ -1,0 +1,86 @@
+.header {
+    height: 100vh;
+    width: 100vw;
+    background-image: 
+        url('../img/hero.svg'), 
+        radial-gradient(50% 50% at 50% 50%, #5C85FF 0%, #331E87 100%);
+        background-position: center bottom;
+        background-repeat: no-repeat;
+        color: #fff;
+        position: relative;
+    overflow: hidden;
+
+    @media screen and (max-width: 1560px) {
+        background-size: 100vw;
+    }
+    @media screen and (max-width: 960px) {
+        background-image: 
+            linear-gradient(to right bottom,rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.3)),
+            url('../img/hero.svg'), 
+            radial-gradient(50% 50% at 50% 50%, #5C85FF 0%, #331E87 100%);
+        }
+    }
+    
+    .header__text-container {
+        position: static;
+        display: block;
+        margin: 5px auto 0;
+        padding: 0 20px;
+
+        @media screen and (max-width: 1560px) {
+            margin-top: 10vh;
+        }
+}
+
+.header__heading-1 {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 20px;
+    text-align: center;
+    color: #69CCFA;
+    margin-bottom: 26px;
+}
+.header__heading-2 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 20px;
+    text-align: center;
+    color: #FFBB00;
+    margin-bottom: 26px;
+    
+    @media screen and (max-width: 960px) {
+        line-height: 60px;
+        margin-bottom: 0;
+    }
+}
+.header__heading-3 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 32px;
+    text-align: center;
+    color: #FFBB00;
+
+    @media screen and (max-width: 960px) {
+        line-height: 40px;
+        padding: 20px;
+    }
+    @media screen and (max-width: 960px) {
+        line-height: 60px;
+        font-size: 16px;
+    }
+    @media screen and (max-width: 600px) {
+        line-height: 40px;
+        font-size: 12px;
+        width: 90%;
+        margin: 0 auto;
+        padding: 10px;
+    }
+
+}
+.text-span {
+   display: block; 
+   margin: auto;
+}
