@@ -83,6 +83,10 @@ p.modal__text {
     width: 140px;
     z-index: 1;
     
+    @media screen and (max-width: 960px) {
+        position: static;
+    }
+
     &:hover {
         cursor: pointer;
     }
@@ -102,11 +106,12 @@ p.modal__text {
     }
     &:hover::after{
         background: #94DDFF;
+
+        @media screen and (max-width: 960px) {
+            background-color: transparent;
+        }
     }
 
-    @media screen and (max-width: 960px) {
-        position: static;
-    }
 
     &:first-child {
         left: 0;
