@@ -19,13 +19,13 @@ $mail->IsHTML(true);
 $mail->isSMTP();                                      // Set mailer to use SMTP
 $mail->Host = 'smtp.mail.ru';                         // Specify main and backup SMTP servers
 $mail->SMTPAuth = true;                               // Enable SMTP authentication
-$mail->Username = 'test2205271@mail.ru';              // Наш логин
-$mail->Password = '36r0g64A8SiW08sGczHd';             // Наш пароль от ящика
+$mail->Username = 'test2205272@mail.ru';              // Наш логин
+$mail->Password = 'B08PbaC44kP7aVMk1U49';             // Наш пароль от ящика
 $mail->SMTPSecure = 'ssl';                            // Enable TLS encryption, `ssl` also accepted
 $mail->Port = 465;                                    // TCP port to connect to
  
-$mail->setFrom('test2205271@mail.ru', 'Сайт');        // От кого письмо 
-$mail->addAddress('test2205271@mail.ru');             // Add a recipient
+$mail->setFrom('test2205272@mail.ru', 'Сайт');        // От кого письмо 
+$mail->addAddress('test2205272@mail.ru');             // Add a recipient
 $mail->isHTML(true);                                  // Set email format to HTML
 
 
