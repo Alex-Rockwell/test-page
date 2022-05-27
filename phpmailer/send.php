@@ -29,14 +29,14 @@ $mail->addAddress('test2205272@mail.ru');             // Add a recipient
 $mail->isHTML(true);                                  // Set email format to HTML
 
 
-// $name = $_POST['name'];
+$username = $_POST['username'];
 $phone = $_POST['phone'];
-// $email = $_POST['email'];
-// $org = $_POST['org'];
+$email = $_POST['email'];
+$org = $_POST['org'];
 // $key1 = $_POST['key1'];
 
 $mail->Subject = 'Данные';
-$mail->Body    = 'Данные' . $phone . '!!';
+$mail->Body    = 'username: ' . $username . 'phone: ' . $phone . 'email: ' . $email . 'org: ' . $org . '!!';
 // $mail->Body    = '
 //     Пользователь оставил данные <br> <br>
 //     Имя: ' . $name . ' <br><br>
