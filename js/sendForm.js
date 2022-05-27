@@ -15,11 +15,13 @@ const sendForm = () => {
 
             const formData = new FormData(form);
 
+            // console.log(formData)
+
             fetch('../phpmailer/send.php', {
                 method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json'
-                },
+                // headers: {
+                //     'Content-Type': 'application/json'
+                // },
                 body: formData
             }).then(data => {
                 console.log(data);

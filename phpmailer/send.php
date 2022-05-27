@@ -12,7 +12,7 @@ require 'Exception.php';
 // require_once('phpmailer/PHPMailerAutoload.php');
 $mail = new PHPMailer;
 $mail->CharSet = 'utf-8';
-// $mail->IsHTML(true);
+$mail->IsHTML(true);
 
 // $mail->SMTPDebug = 3;                              // Enable verbose debug output
 
@@ -30,12 +30,13 @@ $mail->isHTML(true);                                  // Set email format to HTM
 
 
 // $name = $_POST['name'];
-// $phone = $_POST['phone'];
+$phone = $_POST['phone'];
 // $email = $_POST['email'];
 // $org = $_POST['org'];
+// $key1 = $_POST['key1'];
 
 $mail->Subject = 'Данные';
-$mail->Body    = 'Данные';
+$mail->Body    = 'Данные' . $phone . '!!';
 // $mail->Body    = '
 //     Пользователь оставил данные <br> <br>
 //     Имя: ' . $name . ' <br><br>
